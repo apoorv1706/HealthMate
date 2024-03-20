@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dextris</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="/"><img src="{{ url_for('static', filename='logo1.jpg') }}"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">WHY HEALTHMATE</a></li>
+                    <li><a href="/courses">HOSPITAL</a></li>
+                    <li><a href="/newbatches">CONTACT</a></li>
+                    <li><a href="/placements">LOGIN</a></li>
+                    <li><a href="/contact">SIGN UP</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Health Mate</h1>
+            <p>We are ready to help your health problems </p>
+            <a href="http://192.168.14.207:8501" class="hero-btn">For Consultation</a>
+        </div>
+
+
+    </section>
+
+    
+
+    <section class="testimonials">
+        <h1>We Are Ready to help your Health Problems</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, est.</p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="{{ url_for('static', filename='images/one.png') }}" alt="Example Image">
+                <div>
+                    <h3>Interaction with Doctor</h3>
+                    <p>You can connect directly, quickly and easily and there is no need to doubt the quality of the consultation and treatment offered</p>
+                    <!-- <h3>Christine Taylor</h3> -->
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="{{ url_for('static', filename='images/four.png') }}" alt="Example Image">
+                <div>
+                    
+                        <h3>ChatBot</h3>
+                        <p>You can get the do's and dont's for non-critical sickness and get prescription within 12 hr with minimal</p>
+                    <!-- <h3>David Becham</h3> -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="{{ url_for('static', filename='images/three.png') }}" alt="Example Image">
+                <div>
+                    <h3>Visit Hospitals</h3>
+                    <p>Get priority services in hospitals with Hadoc. Which allows you to go the hospital more practically and save time</p>
+                    <!-- <h3>Christine Taylor</h3> -->
+                </div>
+            </div>
+            <!-- <div class="testimonials-col">
+                <img src="{{ url_for('static', filename='images/user2.jpg') }}" alt="Example Image">
+                <div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat voluptatum magnam 
+                        sapiente voluptatem, ab labore laboriosam impedit temporibus natus cupiditate!</p>
+                    <h3>David Becham</h3>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+    <!-- <section class="cta">
+        <h1>Enroll for our Online Courses <br>Anywhere From The World</h1>
+        <a href="/contact" class="hero-btn">CONTACT US</a>
+    </section> -->
+
+
+    
+
+
+
+    <section class="footer">
+        <h4>About US</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, dignissimos quibusdam rerum tempore eius <br>suscipit, dolorum sequi voluptatem minima ratione ex amet voluptas magnam eaque in doloremque quisquam exercitationem similique!</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <a href="https://www.linkedin.com/company/dextris-info-services-pvt-ltd/mycompany/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div>
+            <p>&copy; 2023 Dextris. All rights reserved.</p>
+        </div>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>
